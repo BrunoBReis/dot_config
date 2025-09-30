@@ -1,0 +1,25 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+
+# set bash to vim motions
+set -o vi
+
+# setting editor
+export EDITOR=nvim
+export XDG_CONFIG_HOME="$HOME/.config"
+
+[[ $- != *i* ]] && return
+
+# some alias
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias bat='cat /sys/class/power_supply/BAT0/capacity'
+alias vim='nvim'
+PS1='[\u@\h \W]\$ '
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
