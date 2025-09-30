@@ -1,0 +1,1 @@
+setfont solar24x32
