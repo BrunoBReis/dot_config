@@ -1,0 +1,11 @@
+~/.config/nvim/
+├── init.lua          -- (Será totalmente reescrito)
+|
+└── lua/
+    ├── core/
+    │   ├── options.lua   -- (Substituto do options.vim)
+    │   ├── keymaps.lua   -- (Antigo mappings.lua)
+    │   └── globals.lua   -- (Antigo globals.lua)
+    │
+    └── plugins/
+        ├── ... (Um arquivo .lua para cada plugin)
